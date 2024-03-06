@@ -66,7 +66,7 @@ public class Block : MonoBehaviour {
         int spriteIndex = timesHit - 1;
         if(hitSprites[spriteIndex] != null)
         {
-            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex]
+            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
         }
         else
         {
