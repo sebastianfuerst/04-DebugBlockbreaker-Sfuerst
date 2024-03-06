@@ -203,3 +203,19 @@ Received Import Request.
 Start importing Assets/MyGame/Scripts/Block.cs using Guid(f026dc54e8273684487d899ca7fa9531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82ffa5be77f25d66fe3530724ffe0b8') in 0.000363 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 428.297800 seconds.
+  path: Assets/MyGame/Scripts/Paddle.cs
+  artifactKey: Guid(c5421f6c87269c343a4a9a31b95ee374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/Paddle.cs using Guid(c5421f6c87269c343a4a9a31b95ee374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f82bbdb42dfe7b14503987fa32347d') in 0.000361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 176.259041 seconds.
+  path: Assets/MyGame/Scripts/Paddle.cs
+  artifactKey: Guid(c5421f6c87269c343a4a9a31b95ee374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/Paddle.cs using Guid(c5421f6c87269c343a4a9a31b95ee374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7793dbef089d2a3ca1daadb9a388d8d') in 0.000369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

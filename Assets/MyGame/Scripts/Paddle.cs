@@ -2,37 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Paddle : MonoBehaviour {
-
-    //configruation parameters
+public class Paddle : MonoBehaviour
+{
+    // Configuration parameters
     public float minX = 1f;
     public float maxX = 15f;
     public float screenWidthInUnits = 16f;
 
-    //cached references
-    GameSession theGameSession;
-    Ball theBall;
+    // Cached references
+    private GameSession theGameSession;
+    private Ball theBall;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         theGameSession = FindObjectOfType<GameSession>();
+        if (theGameSession == null)
+        {
+            Debug.LogError("GameSession not found in the scene!");
+        }
+
         theBall = FindObjectOfType<Ball>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        if (theBall == null)
+        {
+            Debug.LogError("Ball not found in the scene!");
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         Vector2 paddlePos = new Vector2(transform.position.x, transform.position.y);
         paddlePos.x = Mathf.Clamp(GetXPosition(), minX, maxX);
         transform.position = paddlePos;
-	}
+    }
 
-    private float GetXPosition
+    private float GetXPosition()
     {
-        if (theGameSession.IsAutoPlayEnabled())
+        if (theGameSession != null && theGameSession.IsAutoPlayEnabled())
         {
-            return theBall.transform.position.x;
+            return theBall != null ? theBall.transform.position.x : transform.position.x; // Fallback to current position if null
         }
         else
         {
