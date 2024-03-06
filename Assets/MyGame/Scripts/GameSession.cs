@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro; // Include this for TextMeshProUGUI
 
-public class GameSession{
-
-    //config parameters
+public class GameSession : MonoBehaviour // Inherit from MonoBehaviour
+{
+    // Config parameters
     [Range(0.1f, 10f)] public float gameSpeed = 1f;
     public int pointsPerBlockDestroyed = 83;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreText; // Ensure you have imported the TMP package and assigned this in the Unity Editor
     public bool isAutoPlayEnabled;
 
-    //state variables
+    // State variables
     public int currentScore = 0;
 
     private void Awake()
@@ -32,10 +33,10 @@ public class GameSession{
         scoreText.text = currentScore.ToString();
     }
 
-    void Update () 
+    void Update()
     {
         Time.timeScale = gameSpeed;
-	}
+    }
 
     public void AddToScore()
     {

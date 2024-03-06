@@ -219,3 +219,35 @@ Received Import Request.
 Start importing Assets/MyGame/Scripts/Paddle.cs using Guid(c5421f6c87269c343a4a9a31b95ee374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7793dbef089d2a3ca1daadb9a388d8d') in 0.000369 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 120.003432 seconds.
+  path: Assets/MyGame/Scripts/Ball.cs
+  artifactKey: Guid(45c7acfb81836a843bf0d200b1c0a967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/Ball.cs using Guid(45c7acfb81836a843bf0d200b1c0a967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc104369d35a5332701e0b21674e6ccc') in 0.000354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 101.226058 seconds.
+  path: Assets/MyGame/Scripts/Ball.cs
+  artifactKey: Guid(45c7acfb81836a843bf0d200b1c0a967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/Ball.cs using Guid(45c7acfb81836a843bf0d200b1c0a967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579461b5df9c90e1930615892d2e1c47') in 0.000327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 62.800749 seconds.
+  path: Assets/MyGame/Scripts/GameSession.cs
+  artifactKey: Guid(7e36b8ab370f5b545980b4ead171b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/GameSession.cs using Guid(7e36b8ab370f5b545980b4ead171b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdef5cbb558a6fc27278c8b7399ccf8c') in 0.000345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 66.675162 seconds.
+  path: Assets/MyGame/Scripts/GameSession.cs
+  artifactKey: Guid(7e36b8ab370f5b545980b4ead171b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/GameSession.cs using Guid(7e36b8ab370f5b545980b4ead171b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f79b139952cb658fd038d09697a50d2') in 0.000365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
