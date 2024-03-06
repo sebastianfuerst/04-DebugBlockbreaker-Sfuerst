@@ -5,10 +5,10 @@ using UnityEngine;
 public class Level : MonoBehaviour {
 
     // parameters
-    [SerializeField] int breakableBlocks; //Serialized for debugging purposes
+    [SerializeField] private int breakableBlocks; //Serialized for debugging purposes
 
     //cached references
-    SceneLoader sceneLoader;
+    private SceneLoader sceneLoader;
 
     private void Start()
     {
@@ -31,7 +31,8 @@ public class Level : MonoBehaviour {
 
     private void LoadEndScreen()
     {
-        if (sceneLoader.IsLastPlayScene)
+        // Ensure we call IsLastPlayScene() as a method
+        if (sceneLoader.IsLastPlayScene())
         {
             sceneLoader.LoadCongrats();
         }

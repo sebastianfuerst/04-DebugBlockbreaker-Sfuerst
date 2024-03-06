@@ -259,3 +259,19 @@ Received Import Request.
 Start importing Assets/MyGame/Scripts/SceneLoader.cs using Guid(75c3615ff22913b47a8aa3897bb022d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43634b53751eed57b6cf0fc198a61492') in 0.000440 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 265.240919 seconds.
+  path: Assets/MyGame/Scripts/Level.cs
+  artifactKey: Guid(e5c9fa59352978d4ba98d3f232d13e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/Level.cs using Guid(e5c9fa59352978d4ba98d3f232d13e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a167f685200d89f10f21bdd1ba0ee9') in 0.000387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 81.017346 seconds.
+  path: Assets/MyGame/Scripts/Level.cs
+  artifactKey: Guid(e5c9fa59352978d4ba98d3f232d13e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyGame/Scripts/Level.cs using Guid(e5c9fa59352978d4ba98d3f232d13e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51643ec7a27ae92d747d783b76dc6aeb') in 0.000365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
