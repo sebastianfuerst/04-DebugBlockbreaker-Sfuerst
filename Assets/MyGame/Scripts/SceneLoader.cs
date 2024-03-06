@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
-    
     private const string GAMEOVERSCREEN = "GameOver";
     private const string CONGRATSSCREEN = "Congrats";
     private const string LEVEL5 = "Level5";
@@ -34,6 +33,7 @@ public class SceneLoader : MonoBehaviour {
 
     public bool IsLastPlayScene()
     {
-        return SceneManager.GetActiveScene() == LEVEL5;
+        // Compare the name of the current active scene with LEVEL5
+        return SceneManager.GetActiveScene().name == LEVEL5;
     }
 }
