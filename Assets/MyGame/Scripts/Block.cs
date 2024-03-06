@@ -3,29 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Block : MonoBehaviour {
-
-    //constants
+public class Block : MonoBehaviour
+{
+    // Constants
     private const string BREAKABLE = "Breakable";
     private const string UNBREAKABLE = "UnBreakable";
 
-    //config params
+    // Config params
     public AudioClip breakSound;
     public GameObject blockSparklesVFX;
     public Sprite[] hitSprites;
 
-    //cached reference
+    // Cached reference
     private Level level;
     private GameSession gameStatus;
 
-    //state variables
-    [SerializeField] int timesHit; //only for debug purposes
+    // State variables
+    [SerializeField] private int timesHit; // Only for debug purposes
 
     private void Start()
     {
         CountBreakableBlocks();
         gameStatus = FindObjectOfType<GameSession>();
-
     }
 
     private void CountBreakableBlocks()
@@ -40,11 +39,10 @@ public class Block : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(tag == BREAKABLE)
+        if (tag == BREAKABLE)
         {
             HandleHit();
         }
-
     }
 
     private void HandleHit()
@@ -64,13 +62,13 @@ public class Block : MonoBehaviour {
     private void ShowNextHitSprite()
     {
         int spriteIndex = timesHit - 1;
-        if(hitSprites[spriteIndex] != null)
+        if (hitSprites.Length > spriteIndex && hitSprites[spriteIndex] != null)
         {
             GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
         }
         else
         {
-            Debug.LogError("Block sprite is missing from array" + gameObject.name);
+            Debug.LogError("Block sprite is missing from array " + gameObject.name);
         }
     }
 
@@ -90,7 +88,7 @@ public class Block : MonoBehaviour {
 
     private void TriggerSparkleVFX()
     {
-        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position.x, transform.rotation);
+        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
         Destroy(sparkles, 1f);
     }
 }
